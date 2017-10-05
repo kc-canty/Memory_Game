@@ -1,73 +1,33 @@
-.game-square {
-  box-sizing: border-box;
-  border: 1px solid #000;
-  width: 100px;
-  height: 100px;
-  position: relative;
-  overflow: hidden;
+body {
+  background-image: url("http://latimesblogs.latimes.com/.a/6a00d8341c630a53ef0168e9e9b105970c-pi");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1500px;
+  height: 850px;
 }
 
-.game-square > div {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  transition: 400ms;
-} 
-
-.game-square > div > div {
-  height: 50%;
+h1 {
+  text-align: center;
+  font-family: Comic Sans MS;
 }
 
-.game-square > div > div:first-child {
-  background-color: gray;
+div#memory_board{
+  background:#CCC;
+  border:#999 1px solid;
+  width:800px;
+  height:540px;
+  padding:24px;
+  margin:0px auto;
 }
-
-.flip > div {
-  top: -100%;
-}
-
-.square-0 {
-  background-color: aqua;
-}
-
-.square-1 {
-  background-color: bisque;
-}
-
-.square-2 {
-  background-color: blue;
-}
-
-.square-3 {
-  background-color: blueviolet;
-}
-
-.square-4 {
-  background-color: yellow;
-}
-
-.square-5 {
-  background-color: cadetblue;
-}
-
-.square-6 {
-  background-color: chartreuse;
-}
-
-.square-7 {
-  background-color: chocolate;
-}
-
-.square-8 {
-  background-color: coral;
-}
-
-#game {
-  width: 400px;
-  height: 400px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  border: 1px solid red;
+div#memory_board > div{
+  background: url(tile_bg.jpg) no-repeat;
+  border:#000 1px solid;
+  width:71px;
+  height:71px;
+  float:left;
+  margin:10px;
+  padding:20px;
+  font-size:64px;
+  cursor:pointer;
+  text-align:center;
 }
