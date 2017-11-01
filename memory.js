@@ -1,4 +1,5 @@
-var memory_array = ["assets/Auto.jpg", "assets/Auto.jpg"];
+var memory_array = ["A", "A", "B", "B", "C", "C", "D", "D", "E", "E", "F", "F", "G", "G",
+                    "H", "H", "I", "I", "J", "J", "L", "L", "M", "M",];  
 var memory_values = [];
 var memory_tile_ids = [];
 var tiles_flipped = 0;
@@ -46,9 +47,9 @@ function memoryFlipTile(tile,val){
                     // Flip the 2 tiles back over
                     var tile_1 = document.getElementById(memory_tile_ids[0]);
                     var tile_2 = document.getElementById(memory_tile_ids[1]);
-                    tile_1.style.background = 'url(tile_bg.jpg) no-repeat';
+                    tile_1.style.background = 'url(Simpsons_logo.png) no-repeat';
                     tile_1.innerHTML = "";
-                    tile_2.style.background = 'url(tile_bg.jpg) no-repeat';
+                    tile_2.style.background = 'url(Simpsons_logo.png) no-repeat';
                     tile_2.innerHTML = "";
                     // Clear both arrays
                     memory_values = [];
